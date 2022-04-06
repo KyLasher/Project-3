@@ -1,5 +1,4 @@
-public interface BinaryTreeInterface<T> extends TreeInterface<T>
-{
+public interface BinaryTreeInterface<T> extends TreeInterface<T> {
     /** Sets the data in the root of this binary tree.
      @param rootData  The object that is the data for the tree's root.
      */

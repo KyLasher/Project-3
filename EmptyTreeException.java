@@ -1,5 +1,4 @@
-public class EmptyTreeException extends RuntimeException
-{
+public class EmptyTreeException extends RuntimeException {
     public EmptyTreeException()
     {
         this(null);

@@ -1,5 +1,4 @@
-public interface TreeInterface<T>
-{
+public interface TreeInterface<T> {
     public T getRootData();
     public int getHeight();
     public int getNumberOfNodes();

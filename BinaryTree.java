@@ -1,5 +1,4 @@
-public class BinaryTree<T> implements BinaryTreeInterface<T>
-{
+public class BinaryTree<T> implements BinaryTreeInterface<T> {
     private BinaryNode<T> root;
 
     public BinaryTree()
