@@ -50,14 +50,33 @@ public class DriverBT {
     public static void createTree1(BinaryTree<String> tree)
     {
         // Leaves
-        BinaryTree<String> dTree = new BinaryTree<>("D");
-        BinaryTree<String> eTree = new BinaryTree<>("E");
-        BinaryTree<String> gTree = new BinaryTree<>("G");
+        BinaryTree<String> lTree = new BinaryTree<>("L");
+        BinaryTree<String> mTree = new BinaryTree<>("M");
+        BinaryTree<String> pTree = new BinaryTree<>("P");
+        BinaryTree<String> oTree = new BinaryTree<>("O");
+        BinaryTree<String> rTree = new BinaryTree<>("R");
+        BinaryTree<String> sTree = new BinaryTree<>("S");
+        BinaryTree<String> tTree = new BinaryTree<>("T");
+        BinaryTree<String> uTree = new BinaryTree<>("U");
+        BinaryTree<String> vTree = new BinaryTree<>("V");
+        BinaryTree<String> wTree = new BinaryTree<>("W");
+        BinaryTree<String> xTree = new BinaryTree<>("X");
+        BinaryTree<String> yTree = new BinaryTree<>("Y");
+        BinaryTree<String> zTree = new BinaryTree<>("Z");
+
 
         // Subtrees:
-        BinaryTree<String> fTree = new BinaryTree<>("F", null, gTree);
-        BinaryTree<String> bTree = new BinaryTree<>("B", dTree, eTree);
-        BinaryTree<String> cTree = new BinaryTree<>("C", fTree, null);
+        BinaryTree<String> hTree = new BinaryTree<>("H", oTree, rTree);
+        BinaryTree<String> iTree = new BinaryTree<>("i", sTree, tTree);
+        BinaryTree<String> jTree = new BinaryTree<>("j", uTree, vTree);
+        BinaryTree<String> kTree = new BinaryTree<>("k", wTree, xTree);
+        BinaryTree<String> nTree = new BinaryTree<>("n", yTree, zTree);
+        BinaryTree<String> dTree = new BinaryTree<>("d", hTree, iTree);
+        BinaryTree<String> eTree = new BinaryTree<>("e", jTree, kTree);
+        BinaryTree<String> fTree = new BinaryTree<>("f", lTree, mTree);
+        BinaryTree<String> gTree = new BinaryTree<>("g", nTree, pTree);
+        BinaryTree<String> bTree = new BinaryTree<>("b", dTree, eTree);
+        BinaryTree<String> cTree = new BinaryTree<>("c", fTree, gTree);
 
         tree.setTree("A", bTree, cTree);
 
