@@ -53,7 +53,7 @@ public class DriverBT {
         BinaryTree<String> lTree = new BinaryTree<>("L");
         BinaryTree<String> mTree = new BinaryTree<>("M");
         BinaryTree<String> pTree = new BinaryTree<>("P");
-        BinaryTree<String> oTree = new BinaryTree<>("O");
+        BinaryTree<String> qTree = new BinaryTree<>("Q");
         BinaryTree<String> rTree = new BinaryTree<>("R");
         BinaryTree<String> sTree = new BinaryTree<>("S");
         BinaryTree<String> tTree = new BinaryTree<>("T");
@@ -66,28 +66,31 @@ public class DriverBT {
 
 
         // Subtrees:
-        BinaryTree<String> hTree = new BinaryTree<>("H", oTree, rTree);
-        BinaryTree<String> iTree = new BinaryTree<>("i", sTree, tTree);
-        BinaryTree<String> jTree = new BinaryTree<>("j", uTree, vTree);
-        BinaryTree<String> kTree = new BinaryTree<>("k", wTree, xTree);
-        BinaryTree<String> nTree = new BinaryTree<>("n", yTree, zTree);
+        BinaryTree<String> hTree = new BinaryTree<>("H", pTree, qTree);
+        BinaryTree<String> iTree = new BinaryTree<>("i", rTree, sTree);
+        BinaryTree<String> jTree = new BinaryTree<>("j", tTree, uTree);
+        BinaryTree<String> kTree = new BinaryTree<>("k", vTree, wTree);
+        BinaryTree<String> nTree = new BinaryTree<>("n", xTree, yTree);
+        BinaryTree<String> oTree = new BinaryTree<>("o", zTree, null);
         BinaryTree<String> dTree = new BinaryTree<>("d", hTree, iTree);
         BinaryTree<String> eTree = new BinaryTree<>("e", jTree, kTree);
         BinaryTree<String> fTree = new BinaryTree<>("f", lTree, mTree);
-        BinaryTree<String> gTree = new BinaryTree<>("g", nTree, pTree);
+        BinaryTree<String> gTree = new BinaryTree<>("g", nTree, oTree);
         BinaryTree<String> bTree = new BinaryTree<>("b", dTree, eTree);
         BinaryTree<String> cTree = new BinaryTree<>("c", fTree, gTree);
 
         tree.setTree("A", bTree, cTree);
 
         System.out.println("\nGiven Tree:\n");
-        System.out.println("     A      ");
-        System.out.println("   /   \\  ");
-        System.out.println("  B     C  ");
-        System.out.println(" / \\   /  ");
-        System.out.println("D   E  F   ");
-        System.out.println("        \\ ");
-        System.out.println("         G ");
+        System.out.println("                   A                    ");
+        System.out.println("                 /    \\                ");
+        System.out.println("           B                 C          ");
+        System.out.println("       /      \\        /       \\      ");
+        System.out.println("      D        E       F         G      ");
+        System.out.println("     / \\     / \\    / \\      / \\    ");
+        System.out.println("    H   I    J   K   L   M     N   O    ");
+        System.out.println("   /\\ /\\  /\\ /\\  /\\ /\\  /\\ /\\   ");
+        System.out.println("  P  Q R S T  U V W          X  Y Z     ");
         System.out.println();
     } // end createTree
 
