@@ -99,25 +99,42 @@ public class DriverBT {
     public static void createTree2(BinaryTree<String> tree)
         {
             // Leaves
-            BinaryTree<String> dTree = new BinaryTree<>("D");
-            BinaryTree<String> eTree = new BinaryTree<>("E");
-            BinaryTree<String> gTree = new BinaryTree<>("G");
+            BinaryTree<String> hTree = new BinaryTree<>("H");
+            BinaryTree<String> iTree = new BinaryTree<>("I");
+            BinaryTree<String> jTree = new BinaryTree<>("J");
+            BinaryTree<String> lTree = new BinaryTree<>("L");
+            BinaryTree<String> nTree = new BinaryTree<>("N");
+            BinaryTree<String> oTree = new BinaryTree<>("O");
+            BinaryTree<String> qTree = new BinaryTree<>("Q");
+            BinaryTree<String> rTree = new BinaryTree<>("R");
+            BinaryTree<String> sTree = new BinaryTree<>("S");
+
     
             // Subtrees:
-            BinaryTree<String> fTree = new BinaryTree<>("F", null, gTree);
+            BinaryTree<String> pTree = new BinaryTree<>("P", sTree, null);
+            BinaryTree<String> kTree = new BinaryTree<>("K", pTree, null);
+            BinaryTree<String> mTree = new BinaryTree<>("M", qTree, rTree);
+            BinaryTree<String> dTree = new BinaryTree<>("D", hTree, iTree);
+            BinaryTree<String> eTree = new BinaryTree<>("E", jTree, kTree);
+            BinaryTree<String> fTree = new BinaryTree<>("F", lTree, mTree);
+            BinaryTree<String> gTree = new BinaryTree<>("G", nTree, oTree);
             BinaryTree<String> bTree = new BinaryTree<>("B", dTree, eTree);
-            BinaryTree<String> cTree = new BinaryTree<>("C", fTree, null);
+            BinaryTree<String> cTree = new BinaryTree<>("C", fTree, gTree);
     
             tree.setTree("A", bTree, cTree);
     
             System.out.println("\nGiven Tree:\n");
-            System.out.println("     A      ");
-            System.out.println("   /   \\  ");
-            System.out.println("  B     C  ");
-            System.out.println(" / \\   /  ");
-            System.out.println("D   E  F   ");
-            System.out.println("        \\ ");
-            System.out.println("         G ");
+            System.out.println("                A                   ");
+            System.out.println("          /           \\            ");
+            System.out.println("         B             C            ");
+            System.out.println("      /    \\        /    \\        ");
+            System.out.println("     D      E       F      G        ");
+            System.out.println("    / \\   / \\    / \\   / \\      ");
+            System.out.println("   H   I  J   K    L  M   N  O      ");
+            System.out.println("             /       / \\           ");
+            System.out.println("            P       Q   R           ");
+            System.out.println("           /                        ");
+            System.out.println("          S                         ");
             System.out.println();
         } // end createTree
     } // end createTree2
